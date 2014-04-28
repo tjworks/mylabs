@@ -14,6 +14,7 @@ concurrency=$4
 testtime=$5
 host=$6
 
+
 echo "Launching ${concurrency} readers..."
 for i in `seq 1 ${concurrency}`; do 
     mongo --host $host --eval "var serverCount=${serverCount}; var dayCount=${dayCount}; var impl='${impl}';" lib/reader.js & 
