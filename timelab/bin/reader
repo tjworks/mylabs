@@ -13,15 +13,18 @@ impl=$3
 concurrency=$4
 testtime=$5
 host=$6
-
+suite=$7
 
 echo "Launching ${concurrency} readers..."
+mongo --host $host --eval  "var serverCount=${serverCount}; var dayCount=${dayCount}; var impl='${impl}';  var concurrency=${concurrency};  var suite='${suite}'; "  lib/snapshot-begin.js  
 for i in `seq 1 ${concurrency}`; do 
-    mongo --host $host --eval "var serverCount=${serverCount}; var dayCount=${dayCount}; var impl='${impl}';" lib/reader.js & 
+    mongo --host $host --eval "var serverCount=${serverCount}; var dayCount=${dayCount}; var impl='${impl}';  var concurrency=${concurrency};  " lib/reader.js & 
     echo "Started ${i}"
 done
 
 sleep ${testtime}
+
+mongo --host $host --eval   "var serverCount=${serverCount}; var dayCount=${dayCount}; var impl='${impl}';  var concurrency=${concurrency};  var suite='${suite}'; "  lib/snapshot-end.js  
 
 echo "Killing readers"
 ./bin/killallreaders

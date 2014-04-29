@@ -1,0 +1,27 @@
+# test 1
+
+./bin/reader 10 1 sample 5 7 localhost	suite-sample-read-varies-by-days
+./bin/reader 10 2 sample 5 7 localhost suite-sample-read-varies-by-days
+./bin/reader 10 3 sample 5 7 localhost suite-sample-read-varies-by-days         
+./bin/reader 10 5 sample 5 7 localhost suite-sample-read-varies-by-days         
+./bin/reader 10 10 sample 5 7 localhost suite-sample-read-varies-by-days
+./bin/reader 10 15 sample 5 7 localhost suite-sample-read-varies-by-days
+./bin/reader 10 30 sample 5 7 localhost suite-sample-read-varies-by-days
+
+
+
+# test 2
+
+
+ ./bin/reader 10 3 sample 1 7 localhost  suite-sample-read-varies-by-threads
+ ./bin/reader 10 3 sample 2 7 localhost  suite-sample-read-varies-by-threads
+ ./bin/reader 10 3 sample 3 7 localhost    suite-sample-read-varies-by-threads      
+ ./bin/reader 10 3 sample 4 7 localhost   suite-sample-read-varies-by-threads       
+
+ ./bin/reader 10 3 sample 5 7 localhost    suite-sample-read-varies-by-threads      
+
+ ./bin/reader 10 3 sample 6 7 localhost   suite-sample-read-varies-by-threads       
+
+ ./bin/reader 10 3 sample 8 7 localhost    suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 10 7 localhost   suite-sample-read-varies-by-threads 
+

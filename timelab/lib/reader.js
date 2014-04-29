@@ -27,15 +27,15 @@ if(impl=="sample") engine = dps;
 if(impl=="hour") engine = dph;
 if(impl=="day") engine = dpd;
 
-var startPoint = new Date();
-db.readcount.update({server:serverCount, days:dayCount, impl:impl}, {  $set:{ starttime:startPoint } }, {upsert:1});
-db.readcount.ensureIndex({server:1, days:1, impl:1});
+// var startPoint = new Date();
+// db.readcount.update({server:serverCount, days:dayCount, impl:impl}, {  $set:{ starttime:startPoint } }, {upsert:1});
+// db.readcount.ensureIndex({server:1, days:1, impl:1});
 for(var i=0;;i++) { 
     var name = "server" + Random.randInt(serverCount);
     engine.query( name, begin_range, end_of_time );
     
     if(i % 100  == 1 ){
-        var now = new Date() - startPoint;
-        db.readcount.update({server:serverCount, days:dayCount, impl:impl}, {$inc: {count:100}, $set:{millis: now } } );
+        //var now = new Date() - startPoint;
+        //db.readcount.update({server:serverCount, days:dayCount, impl:impl}, {$inc: {count:100}, $set:{millis: now } } );
     }  
 }
