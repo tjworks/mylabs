@@ -3,13 +3,13 @@
 
 # test 1
 
-./bin/reader 10 1 hour 5 35 localhost	suite-hour-read-varies-by-days
-./bin/reader 10 2 hour 5 35 localhost suite-hour-read-varies-by-days
-./bin/reader 10 3 hour 5 35 localhost suite-hour-read-varies-by-days         
-./bin/reader 10 5 hour 5 35 localhost suite-hour-read-varies-by-days         
-./bin/reader 10 10 hour 5 35 localhost suite-hour-read-varies-by-days
-./bin/reader 10 15 hour 5 35 localhost suite-hour-read-varies-by-days
-./bin/reader 10 30 hour 5 35 localhost suite-hour-read-varies-by-days
+./bin/reader 10 1 hour 5 35 tja1.mongodb.ga	suite-hour-read-varies-by-days
+./bin/reader 10 2 hour 5 35 tja1.mongodb.ga suite-hour-read-varies-by-days
+./bin/reader 10 3 hour 5 35 tja1.mongodb.ga suite-hour-read-varies-by-days         
+./bin/reader 10 5 hour 5 35 tja1.mongodb.ga suite-hour-read-varies-by-days         
+./bin/reader 10 10 hour 5 35 tja1.mongodb.ga suite-hour-read-varies-by-days
+./bin/reader 10 15 hour 5 35 tja1.mongodb.ga suite-hour-read-varies-by-days
+./bin/reader 10 30 hour 5 35 tja1.mongodb.ga suite-hour-read-varies-by-days
 
 
 
@@ -17,14 +17,14 @@
 # Time lab #2: suite-hour-read-varies-by-threads
 # all data fits in memory
 
- ./bin/reader 10 3 hour 1 35 localhost  suite-hour-read-varies-by-threads
- ./bin/reader 10 3 hour 2 35 localhost  suite-hour-read-varies-by-threads
- ./bin/reader 10 3 hour 3 35 localhost    suite-hour-read-varies-by-threads      
- ./bin/reader 10 3 hour 4 35 localhost   suite-hour-read-varies-by-threads       
- ./bin/reader 10 3 hour 5 35 localhost    suite-hour-read-varies-by-threads      
- ./bin/reader 10 3 hour 6 35 localhost   suite-hour-read-varies-by-threads       
- ./bin/reader 10 3 hour 8 35 localhost    suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 10 35 localhost   suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 20 35 localhost   suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 30 35 localhost   suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 50 35 localhost   suite-hour-read-varies-by-threads 
+ ./bin/reader 10 3 hour 1 35 tja1.mongodb.ga  suite-hour-read-varies-by-threads
+ ./bin/reader 10 3 hour 2 35 tja1.mongodb.ga  suite-hour-read-varies-by-threads
+ ./bin/reader 10 3 hour 3 35 tja1.mongodb.ga    suite-hour-read-varies-by-threads      
+ ./bin/reader 10 3 hour 4 35 tja1.mongodb.ga   suite-hour-read-varies-by-threads       
+ ./bin/reader 10 3 hour 5 35 tja1.mongodb.ga    suite-hour-read-varies-by-threads      
+ ./bin/reader 10 3 hour 6 35 tja1.mongodb.ga   suite-hour-read-varies-by-threads       
+ ./bin/reader 10 3 hour 8 35 tja1.mongodb.ga    suite-hour-read-varies-by-threads 
+ ./bin/reader 10 3 hour 10 35 tja1.mongodb.ga   suite-hour-read-varies-by-threads 
+ ./bin/reader 10 3 hour 20 35 tja1.mongodb.ga   suite-hour-read-varies-by-threads 
+ ./bin/reader 10 3 hour 30 35 tja1.mongodb.ga   suite-hour-read-varies-by-threads 
+ ./bin/reader 10 3 hour 50 35 tja1.mongodb.ga   suite-hour-read-varies-by-threads 
