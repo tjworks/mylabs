@@ -11,17 +11,17 @@
 
 
 # test 2
+# Time lab #2: suite-sample-read-varies-by-threads
+# all data fits in memory
 
-
- ./bin/reader 10 3 sample 1 7 localhost  suite-sample-read-varies-by-threads
- ./bin/reader 10 3 sample 2 7 localhost  suite-sample-read-varies-by-threads
- ./bin/reader 10 3 sample 3 7 localhost    suite-sample-read-varies-by-threads      
- ./bin/reader 10 3 sample 4 7 localhost   suite-sample-read-varies-by-threads       
-
- ./bin/reader 10 3 sample 5 7 localhost    suite-sample-read-varies-by-threads      
-
- ./bin/reader 10 3 sample 6 7 localhost   suite-sample-read-varies-by-threads       
-
- ./bin/reader 10 3 sample 8 7 localhost    suite-sample-read-varies-by-threads 
- ./bin/reader 10 3 sample 10 7 localhost   suite-sample-read-varies-by-threads 
-
+ ./bin/reader 10 3 sample 1 17 localhost  suite-sample-read-varies-by-threads
+ ./bin/reader 10 3 sample 2 17 localhost  suite-sample-read-varies-by-threads
+ ./bin/reader 10 3 sample 3 17 localhost    suite-sample-read-varies-by-threads      
+ ./bin/reader 10 3 sample 4 17 localhost   suite-sample-read-varies-by-threads       
+ ./bin/reader 10 3 sample 5 17 localhost    suite-sample-read-varies-by-threads      
+ ./bin/reader 10 3 sample 6 17 localhost   suite-sample-read-varies-by-threads       
+ ./bin/reader 10 3 sample 8 17 localhost    suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 10 17 localhost   suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 20 17 localhost   suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 30 17 localhost   suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 50 17 localhost   suite-sample-read-varies-by-threads 
