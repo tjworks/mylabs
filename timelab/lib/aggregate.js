@@ -19,7 +19,7 @@ db.snaps.find({'spec.suite':'suite-sample-read-varies-by-days', label:'end'}, { 
 	else
 		pageFaults.push(0)
 	
-	var rt =  Math.round  (( millis  * item.spec.threads * 1000 )/ item.delta.opcounters.query );
+	var rt =  Math.round  (( millis  * item.spec.threads   )/ item.delta.opcounters.query );
 	responseTime.push(       rt  ); 
 
 	print("Millis "+millis +"  threads "+ item.spec.threads + "Query " + item.delta.opcounters.query +"  RT "+ rt);
@@ -58,7 +58,7 @@ db.snaps.find({'spec.suite':'suite-sample-read-varies-by-threads', label:'end'},
 	else
 		pageFaults.push(0)
 	
-	var rt =  Math.round  (( millis  * item.spec.threads * 1000 )/ item.delta.opcounters.query );
+	var rt =  Math.round  (( millis  * item.spec.threads   )/ item.delta.opcounters.query );
 	responseTime.push(       rt  ); 
 
 	print("Millis "+millis +"  threads "+ item.spec.threads + "Query " + item.delta.opcounters.query +"  RT "+ rt);
@@ -98,7 +98,7 @@ db.snaps.find({'spec.suite':'suite-hour-read-varies-by-days', label:'end'}, { sp
 	else
 		pageFaults.push(0)
 	
-	var rt =  Math.round  (( millis  * item.spec.threads * 1000 )/ item.delta.opcounters.query );
+	var rt =  Math.round  (( millis  * item.spec.threads   )/ item.delta.opcounters.query );
 	responseTime.push(       rt  ); 
 
 	//print("Millis "+millis +"  threads "+ item.spec.threads + "Query " + item.delta.opcounters.query +"  RT "+ rt);
@@ -137,7 +137,7 @@ db.snaps.find({'spec.suite':'suite-hour-read-varies-by-threads', label:'end'}, {
 	else
 		pageFaults.push(0)
 	
-	var rt =  Math.round  (( millis  * item.spec.threads * 1000 )/ item.delta.opcounters.query );
+	var rt =  Math.round  (( millis  * item.spec.threads  )/ item.delta.opcounters.query );
 	responseTime.push(       rt  ); 
 
 	print("Millis "+millis +"  threads "+ item.spec.threads + "Query " + item.delta.opcounters.query +"  RT "+ rt);
