@@ -1,27 +1,27 @@
 # test 1
 
-./bin/reader 10 1 hour 5 35 localhost	suite-hour-read-varies-by-days
-./bin/reader 10 2 hour 5 35 localhost suite-hour-read-varies-by-days
-./bin/reader 10 3 hour 5 35 localhost suite-hour-read-varies-by-days         
-./bin/reader 10 5 hour 5 35 localhost suite-hour-read-varies-by-days         
-./bin/reader 10 10 hour 5 35 localhost suite-hour-read-varies-by-days
-./bin/reader 10 15 hour 5 35 localhost suite-hour-read-varies-by-days
-./bin/reader 10 30 hour 5 35 localhost suite-hour-read-varies-by-days
+./bin/reader 10 1 sample 5 35 localhost	suite-sample-read-varies-by-days
+./bin/reader 10 2 sample 5 35 localhost suite-sample-read-varies-by-days
+./bin/reader 10 3 sample 5 35 localhost suite-sample-read-varies-by-days         
+./bin/reader 10 5 sample 5 35 localhost suite-sample-read-varies-by-days         
+./bin/reader 10 10 sample 5 35 localhost suite-sample-read-varies-by-days
+./bin/reader 10 15 sample 5 35 localhost suite-sample-read-varies-by-days
+./bin/reader 10 30 sample 5 35 localhost suite-sample-read-varies-by-days
 
 
 
 # test 2
-# Time lab #2: suite-hour-read-varies-by-threads
+# Time lab #2: suite-sample-read-varies-by-threads
 # all data fits in memory
 
- ./bin/reader 10 3 hour 1 35 localhost  suite-hour-read-varies-by-threads
- ./bin/reader 10 3 hour 2 35 localhost  suite-hour-read-varies-by-threads
- ./bin/reader 10 3 hour 3 35 localhost    suite-hour-read-varies-by-threads      
- ./bin/reader 10 3 hour 4 35 localhost   suite-hour-read-varies-by-threads       
- ./bin/reader 10 3 hour 5 35 localhost    suite-hour-read-varies-by-threads      
- ./bin/reader 10 3 hour 6 35 localhost   suite-hour-read-varies-by-threads       
- ./bin/reader 10 3 hour 8 35 localhost    suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 10 35 localhost   suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 20 35 localhost   suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 30 35 localhost   suite-hour-read-varies-by-threads 
- ./bin/reader 10 3 hour 50 35 localhost   suite-hour-read-varies-by-threads 
+ ./bin/reader 10 3 sample 1 35 localhost  suite-sample-read-varies-by-threads
+ ./bin/reader 10 3 sample 2 35 localhost  suite-sample-read-varies-by-threads
+ ./bin/reader 10 3 sample 3 35 localhost    suite-sample-read-varies-by-threads      
+ ./bin/reader 10 3 sample 4 35 localhost   suite-sample-read-varies-by-threads       
+ ./bin/reader 10 3 sample 5 35 localhost    suite-sample-read-varies-by-threads      
+ ./bin/reader 10 3 sample 6 35 localhost   suite-sample-read-varies-by-threads       
+ ./bin/reader 10 3 sample 8 35 localhost    suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 10 35 localhost   suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 20 35 localhost   suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 30 35 localhost   suite-sample-read-varies-by-threads 
+ ./bin/reader 10 3 sample 50 35 localhost   suite-sample-read-varies-by-threads 

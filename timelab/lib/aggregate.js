@@ -2,6 +2,7 @@
 
 // Time lab #1
 
+print("======================= TEST 1 ")
 
 var labels = [];
 var queries = [];
@@ -36,7 +37,7 @@ print(pageFaults.join("\t"));
 print(totalTime.join("\t"));
 
  
-
+print("======================= TEST 2 ")
 
 // Time lab #2: suite-sample-read-varies-by-threads
 //  all data fits in memory
@@ -77,7 +78,7 @@ print(totalTime.join("\t"));
 
 
 
- 
+ print("======================= TEST 3  hour by day")
 
 // Time lab #3
 
@@ -101,7 +102,7 @@ db.snaps.find({'spec.suite':'suite-hour-read-varies-by-days', label:'end'}, { sp
 	var rt =  Math.round  (( millis  * item.spec.threads   )/ item.delta.opcounters.query );
 	responseTime.push(       rt  ); 
 
-	//print("Millis "+millis +"  threads "+ item.spec.threads + "Query " + item.delta.opcounters.query +"  RT "+ rt);
+	print("Millis "+millis +"  threads "+ item.spec.threads + "Query " + item.delta.opcounters.query +"  RT "+ rt);
 
 	totalTime.push(millis);
      
@@ -119,7 +120,7 @@ print(totalTime.join("\t"));
 
 // Time lab #4: suite-sample-read-varies-by-threads
 //  all data fits in memory
-
+print("======================= TEST 4 hour by threads ")
 
 var labels = [];
 var queries = [];
