@@ -7,7 +7,7 @@ console.log("Starting stats collector for server: ", config.servers);
 var mongosKeys= "server insert  query update deletes getmore command  vsize    res faults  netIn netOut  conn repl       time".split(/\s+/);
 var mongodKeys= "server insert  query update delete getmore command flushes mapped  vsize    res faults  locked-db idx-miss     qr|qw   ar|aw  netIn netOut  conn       time".split(/\s+/);
 
-connectDB('', function(err, db){
+connectDB(config.mongoUrl, function(err, db){
 	if(err) return console.dir(err);
 
 	collect( );
@@ -53,28 +53,7 @@ connectDB('', function(err, db){
 		}			
 	}
 });
-
-function doInsert(doc){
-	// Retrieve
-	var MongoClient = require('mongodb').MongoClient;
-
-	// Connect to the db
-	MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db) {
-	  if(err) { return console.dir(err); }
-
-	  var collection = db.collection('test');
-	  var doc1 = {'hello':'doc1'};
-	  var doc2 = {'hello':'doc2'};
-	  var lotsOfDocs = [{'hello':'doc3'}, {'hello':'doc4'}];
-
-	  collection.insert(doc1);
-
-	  collection.insert(doc2, {w:1}, function(err, result) {});
-
-	  collection.insert(lotsOfDocs, {w:1}, function(err, result) {});
-
-	});
-}
+ 
 
 function connectDB(url, callback){
 	// Retrieve
