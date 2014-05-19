@@ -16,7 +16,7 @@ connectDB('', function(err, db){
 		var spawn = require('child_process').spawn;
 
 		for(var i=0; i<config.servers.length;i++){
-			var child = spawn('mongostat', ['--discover', '--host',  config.servers[i] , config.interval]);
+			var child = spawn('mongostat', ['--discover','--noheaders',  '--host',  config.servers[i] , config.interval]);
 			child.stdout.on('data', function(chunk) {			 
 			  processLog(chunk+"");
 			});	
