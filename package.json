@@ -1,0 +1,15 @@
+{
+  "name": "mstat",
+  "version": "0.0.1",
+  "description": "mongostat collector",
+  "main": "collector",
+  "scripts": {
+    "test": "test"
+  },
+   
+  "dependencies": {     
+    "mongodb": "*"
+  },
+  "author": "tjworks"
+
+}
